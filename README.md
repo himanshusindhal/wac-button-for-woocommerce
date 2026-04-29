@@ -1,1 +1,0 @@
-# smart-whatsapp-order-button-wordpress
