@@ -1,0 +1,48 @@
+/* WhatsApp Button Styles */
+.swob-whatsapp-button {
+	display: inline-flex !important;
+	align-items: center !important;
+	justify-content: center !important;
+	gap: 8px !important;
+	text-decoration: none !important;
+	text-align: center !important;
+}
+
+.swob-whatsapp-button svg {
+	fill: currentColor;
+	width: 20px;
+	height: 20px;
+}
+
+/* Visibility Control via CSS */
+@media (min-width: 769px) {
+	.swob-hide-desktop {
+		display: none !important;
+	}
+}
+
+@media (max-width: 768px) {
+	.swob-hide-mobile {
+		display: none !important;
+	}
+	
+	.swob-sticky-mobile {
+		position: fixed !important;
+		bottom: 20px !important;
+		left: 20px !important;
+		right: 20px !important;
+		width: calc(100% - 40px) !important;
+		z-index: 99999 !important;
+		margin: 0 !important;
+		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2) !important;
+	}
+}
+
+/* Flexbox layout inside cart form to align side-by-side with Add to Cart */
+.woocommerce div.product form.cart,
+.woocommerce div.product form.cart .woocommerce-variation-add-to-cart {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	align-items: center;
+}
